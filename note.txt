@@ -35,4 +35,130 @@
   transition: all 0.3s ease;
 }
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand ms-3 fw-bold" href="#">Hyper</a>
 
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas -->
+            <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <!-- Nav Links -->
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="#">History</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Team Members</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Mobile Search (sm only) -->
+                    <form class="d-flex" role="search">
+                        <div class="input-group">
+                            <input class="form-control search-input" type="search" placeholder="Search..."
+                                aria-label="Search">
+                            <button class="btn btn-outline-danger search-btn" type="submit">
+                                <i class="fa-solid fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+ <section class="testimonials py-5 bg-light" id="testimonials">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">What Our Clients Say</h2>
+                <p class="text-muted">Real feedback from our valued clients</p>
+            </div>
+
+            <!-- Carousel -->
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="card p-4 text-center mx-auto shadow-sm" style="max-width: 500px;">
+                            <img src="images/male.avif" class="rounded-circle mb-3" width="80" height="80"
+                                alt="Client 1">
+                            <p class="fst-italic">"Hyper provided amazing web design services. Highly recommended!"</p>
+                            <h6 class="fw-bold mb-0">John Doe</h6>
+                            <small class="text-muted">CEO, Company A</small>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="card p-4 text-center mx-auto shadow-sm" style="max-width: 500px;">
+                            <img src="/images/female.avif" class="rounded-circle mb-3" width="80" height="80"
+                                alt="Client 2">
+                            <p class="fst-italic">"Professional team and great communication throughout the project."
+                            </p>
+                            <h6 class="fw-bold mb-0">Jane Smith</h6>
+                            <small class="text-muted">Marketing Head, Company B</small>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="card p-4 text-center mx-auto shadow-sm" style="max-width: 500px;">
+                            <img src="/images/male2.avif" class="rounded-circle mb-3" width="80" height="80"
+                                alt="Client 3">
+                            <p class="fst-italic">"Digital marketing results exceeded our expectations. Thank you
+                                Hyper!"</p>
+                            <h6 class="fw-bold mb-0">Michael Lee</h6>
+                            <small class="text-muted">Founder, Startup C</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </div>
+    </section>

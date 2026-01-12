@@ -12,6 +12,10 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- fontawesome icon cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 
 
@@ -28,91 +32,88 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top border-bottom shadow-sm bg-blue-gradient">
         <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand ms-3 fw-bold" href="#">Hyper</a>
-
-            <!-- Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
+            <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="" style="width: 120px;"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Offcanvas -->
-            <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                </div>
-
-                <div class="offcanvas-body">
-                    <!-- Nav Links -->
-                    <ul class="navbar-nav justify-content-center flex-grow-1">
-                        <li class="nav-item me-3">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Testimonials</a>
-                        </li>
-                        <li class="nav-item dropdown me-3">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                About
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Portfolio</a></li>
-                                <li><a class="dropdown-item" href="#">History</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Team Members</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-
-                    <!-- Mobile Search (sm only) -->
-                    <form class="d-flex" role="search">
-                        <div class="input-group">
-                            <input class="form-control search-input" type="search" placeholder="Search..."
-                                aria-label="Search">
-                            <button class="btn btn-outline-danger search-btn" type="submit">
-                                <i class="fa-solid fa-search"></i>
-                            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown me-3 active">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Home</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#skills">Skills</a>
+                            <a class="dropdown-item" href="#">Home 1</a>
                         </div>
-                    </form>
-                </div>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">FAQ</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">FAQ 1</a>
+                            <a class="dropdown-item" href="#">FAQ 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Pages</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Page 1</a>
+                            <a class="dropdown-item" href="#">Pages 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#contact-us">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="#contact-us" class="btn btn-light">Contact Us <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
         </div>
     </nav>
 
-
-    <!-- Home section  -->
-    <section id="home" class="home bg-light text-dark py-5 mt-5">
-        <div class="container px-4">
-            <div class=" row align-items-center">
+    <!-- home section  -->
+    <section class="home" id="home">
+        <div class="container py-5">
+            <div class="row g-1 align-items-center">
                 <div class="col-md-6">
-                    <h1 class="display-6 fw-bold text-center text-md-start">We Build <span class="text-danger">Digital
-                            Solutions</span></h1>
-                    <p class="lead text-center text-md-start">
-                        We help businesses grow with modern websites and digital services.
+
+                    <p class="text-light d-none d-md-inline bg-primary rounded-5 py-1 px-3 mb-3 ">Our
+                        Integrated IT Solutions
+                        Company
                     </p>
-                    <p class="lead text-center text-md-start">And we deliver <b>exceptional results</b> and
-                        <b>outstanding</b>
-                        performance.
-                    </p>
-                    <div class="text-center text-md-start">
-                        <a href="#" class="btn btn-danger btn-lg me-2">Get Started</a>
-                        <a href="#" class="btn btn-outline-dark btn-lg">Learn More....</a>
+
+                    <div class="text-md-start text-center">
+                        <h1 class="text-white my-3">Grow Your Business With <span class="text-danger">HyPer</span> IT
+                            Solutions Company</h1>
+                        <p class="text-white mb-4">
+                            Welcom to Our HyPer Community. We provide the best solutions for your business growth. <br>
+                            <span class="d-none d-lg-inline">IT solutions meet your business needs and help you to
+                                achieve your goals.</span>
+                        </p>
+                        <div class="icons ">
+                            <a href="#services" class="btn btn-primary py-2 px-4 mx-1 mx-lg-3 rounded-5">Get Started <i
+                                    class="fa-solid fa-arrow-up-right-from-square text-light"></i></a>
+
+                            <a href="#" class="btn btn-light py-2 px-4 rounded-5">Discover More...<i
+                                    class="fa-solid fa-arrow-up-right-from-square text-primary"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="/images/download.png" class="img-fluid" alt="Hero Image">
+                <div class="col-md-6">
+                    <div class="img-fluid text-md-end text-center">
+                        <img src="/images/home.png" alt="bg" style="width: 100%;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,35 +124,42 @@
     <section class="py-5 bg-light" id="services">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">Our Services</h2>
-                <p class="text-muted">We provide high quality digital services</p>
+                <p class="h-6 d-inline fw-bold bg-primary text-light p-2 rounded-5 px-3">Our Services</p>
+                <p class="text-muted my-3">We provide high quality digital services</p>
             </div>
 
             <div class="row g-4">
                 <!-- Web Design -->
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <i class="fa-solid fa-palette fa-3x text-primary mb-3"></i>
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+
                         <h5>Web Design</h5>
                         <p>
-                            Creative , User-Friendly Website & <br> Modern Design
+                            Creative, User-Friendly Website and Modern Design
                         </p>
-                        <a href="#" class="btn btn-outline-primary mt-2">
-                            Learn More......
+                        <a href="#" class="btn btn-outline-success mt-2">
+                            Read More......
                         </a>
                     </div>
                 </div>
 
+
                 <!-- Web Development -->
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <i class="fa-solid fa-code fa-3x text-success mb-3"></i>
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
                         <h5>Web Development</h5>
                         <p>
                             Responsive and high-performance websites.
                         </p>
-                        <a href="#" class="btn btn-outline-success mt-2">
-                            Learn More......
+                        <a href="#" class="btn btn-outline-primary mt-2">
+                            Read More......
                         </a>
                     </div>
                 </div>
@@ -159,26 +167,33 @@
                 <!-- Digital Marketing -->
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <i class="fa-solid fa-chart-line fa-3x text-warning mb-3"></i>
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+
                         <h5>Digital Marketing</h5>
                         <p>
-                            Grow your business through online marketing.
+                            Innovative Strategies to Boost Your Online Presence
                         </p>
-                        <a href="#" class="btn btn-outline-warning mt-2">
-                            Learn More......
+                        <a href="#" class="btn btn-outline-primary mt-2">
+                            Read More......
                         </a>
                     </div>
                 </div>
+
                 <!-- SEO -->
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm text-center p-4">
-
-                        <i class="fa-solid fa-magnifying-glass fa-3x text-info mb-3"></i>
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
 
                         <h5>SEO Optimization</h5>
-                        <p>Improve your website ranking on search engines.</p>
-                        <a href="#" class="btn btn-outline-info mt-2">
-                            Learn More......
+                        <p>
+                            Improve Your Website Ranking on Search Engines
+                        </p>
+                        <a href="#" class="btn btn-outline-primary mt-2">
+                            Read More......
                         </a>
                     </div>
                 </div>
@@ -186,11 +201,16 @@
                 <!-- Mobile App -->
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <i class="fa-solid fa-mobile-screen-button fa-3x text-primary mb-3"></i>
-                        <h5>Mobile App Development</h5>
-                        <p>Modern and fast mobile applications.</p>
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                        <h5>Mobile App</h5>
+                        <p>
+                            Innovative Strategies to Boost Your Online Presence
+                        </p>
                         <a href="#" class="btn btn-outline-primary mt-2">
-                            Learn More......
+                            Read More......
                         </a>
                     </div>
                 </div>
@@ -198,189 +218,190 @@
                 <!-- Support -->
                 <div class="col-md-4">
                     <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <i class="fa-solid fa-headset fa-3x text-success mb-3"></i>
-                        <h5>Technical Support</h5>
-                        <p>24/7 support for your business needs.</p>
-                        <a href="#" class="btn btn-outline-success mt-2">
-                            Learn More......
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <h5>Support</h5>
+                        <p>
+                            24/7 Support for All Your Queries
+                        </p>
+
+                        <a href="#" class="btn btn-outline-primary mt-2">
+                            Read More......
                         </a>
                     </div>
                 </div>
 
             </div>
+            <a href="#" class="btn btn-outline-success rounded-circle fixed-bottom-end"
+                style="width: 20px; height: 20px"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
+
     </section>
 
-    <section class="testimonials py-5 bg-light">
+    <!-- skills section  -->
+    <section id="skills">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">What Our Clients Say</h2>
-                <p class="text-muted">Real feedback from our valued clients</p>
-            </div>
-
-            <div class="row g-4">
-
-                <!-- Testimonial 1 -->
-                <div class="col-md-4">
-                    <div class="card p-4 text-center h-100 shadow-sm">
-                        <img src="images/male.avif" class="rounded-circle mb-3" width="80" height="80" alt="Client 1">
-                        <p class="fst-italic">"Hyper provided amazing web design services. Highly recommended!"</p>
-                        <h6 class="fw-bold mb-0">John Doe</h6>
-                        <small class="text-muted">CEO, Company A</small>
-                    </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="col-md-4">
-                    <div class="card p-4 text-center h-100 shadow-sm">
-                        <img src="images/female.avif" class="rounded-circle mb-3" width="80" height="80" alt="Client 2">
-                        <p class="fst-italic">"Professional team and great communication throughout the project."</p>
-                        <h6 class="fw-bold mb-0">Jane Smith</h6>
-                        <small class="text-muted">Marketing Head, Company B</small>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="col-md-4">
-                    <div class="card p-4 text-center h-100 shadow-sm">
-                        <img src="images/male2.avif" class="rounded-circle mb-3" width="80" height="80" alt="Client 3">
-                        <p class="fst-italic">"Digital marketing results exceeded our expectations. Thank you Hyper!"
+            <div class="row g-2">
+                <div class="col-md-6">
+                    <div class="p-4">
+                        <p class="h-6 d-inline fw-bold bg-primary text-light p-2 rounded-5 px-3">Our Skills</p>
+                        <p class=" my-4">
+                            We have a team of skilled professionals who are experts in their respective fields. Our team
+                            is
+                            dedicated to providing high-quality services to our clients.
                         </p>
-                        <h6 class="fw-bold mb-0">Michael Lee</h6>
-                        <small class="text-muted">Founder, Startup C</small>
+                        <div class="mb-4">
+                            <label for="" class="form-label">Web Design</label>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100" style="height: 12px">
+                                <div class="progress-bar bg-dark" style="width: 90%"> 90%</div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="" class="form-label">Web Development</label>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100" style="height: 12px">
+                                <div class="progress-bar bg-primary" style="width: 95%">95%</div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="" class="form-label">Software Development</label>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100" style="height: 12px">
+                                <div class="progress-bar bg-info" style="width: 85%">85%</div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="" class="form-label">Digital Marketing</label>
+                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100" style="height: 12px">
+                                <div class="progress-bar bg-warning" style="width: 90%">90%</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+                <div class="col-md-6 p-3 d-flex justify-content-center align-items-center">
+                    <div class="card rounded-3 img-fluid text-center mx-auto">
+                        <img src="images/skills/skills.jpg" alt="skills"
+                            style="width: 100%; height: 80%; object-fit: cover;" class="rounded-3">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="testimonials py-5 bg-light" id="testimonials">
-        <div class="container">
+    <!-- about section -->
+    <section id="about-us">
+        <div class="container p-4">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">What Our Clients Say</h2>
-                <p class="text-muted">Real feedback from our valued clients</p>
+                <p class="h-6 d-inline fw-bold bg-primary text-light p-2 rounded-5 px-3">About Us</p>
+                <p class="text-muted my-3"> About of HyPer IT Solutions Company </p>
             </div>
-
-            <!-- Carousel -->
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-inner">
-
-                    <!-- Testimonial 1 -->
-                    <div class="carousel-item active">
-                        <div class="card p-4 text-center mx-auto shadow-sm" style="max-width: 500px;">
-                            <img src="images/male.avif" class="rounded-circle mb-3" width="80" height="80"
-                                alt="Client 1">
-                            <p class="fst-italic">"Hyper provided amazing web design services. Highly recommended!"</p>
-                            <h6 class="fw-bold mb-0">John Doe</h6>
-                            <small class="text-muted">CEO, Company A</small>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="carousel-item">
-                        <div class="card p-4 text-center mx-auto shadow-sm" style="max-width: 500px;">
-                            <img src="/images/female.avif" class="rounded-circle mb-3" width="80" height="80"
-                                alt="Client 2">
-                            <p class="fst-italic">"Professional team and great communication throughout the project."
-                            </p>
-                            <h6 class="fw-bold mb-0">Jane Smith</h6>
-                            <small class="text-muted">Marketing Head, Company B</small>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="carousel-item">
-                        <div class="card p-4 text-center mx-auto shadow-sm" style="max-width: 500px;">
-                            <img src="/images/male2.avif" class="rounded-circle mb-3" width="80" height="80"
-                                alt="Client 3">
-                            <p class="fst-italic">"Digital marketing results exceeded our expectations. Thank you
-                                Hyper!"</p>
-                            <h6 class="fw-bold mb-0">Michael Lee</h6>
-                            <small class="text-muted">Founder, Startup C</small>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- about section  -->
-
-    <section id=" about">
-        <div class="container">
-
-            <div class="row">
+            <div class="row g-4 align-items-center mb-5">
                 <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="/images/hero.jpg" alt="Our Team" class="img-fluid">
-                        </div>
+                    <div class="img-fluid text-center position-relative overflow-hidden rounded-3">
+                        <p class="position-absolute top-0 end-0 bg-primary text-white rounded-1 p-2 m-1">
+                            <span class="fw-bold fs-1"> 20+ </span><br> Years of Experience
+                        </p>
+                        <img src="images/about/campaign-creators-gMsnXqILjp4-unsplash.jpg" alt="about-us"
+                            style="width: 100%; height: 70%; object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3>Our Marketing Team</h3>
-                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Cupiditate expedita magnam eos
-                                beatae iusto minus vero facere incidunt et sequi vitae voluptate
-                                saepe quia, cumque
-                                excepturi, maiores modi id nemo?</p>
+                    <h2>About <span class="text-primary">HyPer</span> IT Solutions Company</h2>
+                    <p class="text-muted my-3">
+                        HyPer IT Solutions Company is a leading provider of innovative technology solutions. We
+                        specialize
+                        in delivering cutting-edge IT services to businesses of all size.
+                    </p>
+                    <div class="good ms-4 mb-4">
+                        <div class="my-2">
+                            <i class="fa-solid fa-circle-check text-primary"></i>
+                            <span class="text-muted">High-quality IT services</span>
                         </div>
+                        <div class="my-2">
+                            <i class="fa-solid fa-circle-check text-primary"></i>
+                            <span class="text-muted">Customized IT solutions</span>
+                        </div>
+                        <div class="my-2">
+                            <i class="fa-solid fa-circle-check text-primary"></i>
+                            <span class="text-muted">24/7 support</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary py-2 px-4 rounded-5">Learn More...<i
+                            class="fa-solid fa-arrow-up-right-from-square text-light"></i></a>
+                </div>
+            </div>
+
+            <div class="row g-1 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="about-numbers text-center m-1 rounded-3 p-3 ">
+                        <h2 class="fw-bold">1,000+</h2>
+                        <p>Satisfied Clients</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="about-numbers text-center m-1 rounded-3 p-3">
+                        <h2 class="fw-bold">1,500+</h2>
+                        <p>IT Projects</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="about-numbers text-center m-1 rounded-3 p-3">
+                        <h2 class="fw-bold">45+</h2>
+                        <p>Team Advisors</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="about-numbers text-center m-1 rounded-3 p-3">
+                        <h2 class="fw-bold">350+</h2>
+                        <p>Active Clients</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Contact Form -->
-
+    <!-- Contact Section -->
     <section id="contact-us">
         <div class="container p-3">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Contact Us</h2>
-                <p class="text-muted">We are here to help you</p>
+            <div class="text-center">
+                <p class="h-6 d-inline fw-bold bg-primary text-light py-2 rounded-5 px-4">Contact Us</p>
+                <p class="h-5 my-3">We are here to help you</p>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-4 d-flex justify-content-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.816232492431!2d95.2420241355099!3d21.637352922940483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ca64dde3cc98e3%3A0xb13ccef9d8eaf04!2sMyoma%20Market!5e1!3m2!1sen!2smm!4v1761980187347!5m2!1sen!2smm"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
             <div class="row g-1">
                 <div class="col-lg-5 px-4">
-                    <div class="card p-3 h-100">
-                        <div class="card-body">
-                            <h3>Location</h3>
+                    <div class="card p-3 h-100 border-0">
+                        <div class="card-body ">
+                            <h3>Get in Touch</h3>
                             <div class=" ms-3">
                                 <p>
-                                    <i class="fa-solid fa-location me-3"></i> 12x3 Mingalar Street, Yesagyo, Myanmar
+                                    <i class="fa-solid fa-location me-3 text-danger"></i> 12x3 Mingalar Street, Yesagyo,
+                                    Myanmar
                                 </p>
                                 <p>
-                                    <i class="fa-solid fa-phone me-3"></i> <a href="tel:09772284019" target="_blank">+95
+                                    <i class="fa-solid fa-phone me-3 text-danger"></i> <a href="tel:09772284019"
+                                        target="_blank">+95
                                         9 123
                                         456 789</a>
                                 </p>
                                 <p>
-                                    <i class="fa-solid fa-envelope me-3"></i> <a href="mailto:ngakhant464f@gmail.com"
-                                        target="_blank">hypermyanmar@gmail.com</a>
+                                    <i class="fa-solid fa-envelope me-3 text-danger"></i> <a
+                                        href="mailto:ngakhant464f@gmail.com" target="_blank">hypermyanmar@gmail.com</a>
                                 </p>
                                 <p>
-                                    <i class="fa-solid fa-earth me-3"></i>
+                                    <i class="fa-solid fa-earth me-3 text-danger"></i>
                                     <a href="#">www.hypermyanmar.com</a>
                                 </p>
                             </div>
@@ -389,9 +410,12 @@
                             <div class="ms-3">
 
 
-                                <p><i class="fas fa-clock text-dark me-3"></i><strong>Mon - Fri : </strong> 9:00 AM -
+                                <p><i class="fa-solid fa-clock me-3 text-primary"></i><strong>Mon - Fri :
+                                    </strong>
+                                    9:00 AM -
                                     6:00 PM</p>
-                                <p><i class="fas fa-clock text-dark me-3"></i><strong>Sat &ThickSpace; &ThickSpace;
+                                <p><i class="fa-solid fa-clock me-3 text-primary"></i><strong>Sat &ThickSpace;
+                                        &ThickSpace;
                                         &ThickSpace;
                                         &ThickSpace; :
                                     </strong> 10:00 AM - 4:00 PM
@@ -410,7 +434,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7 px-4">
-                    <div class="card h-100">
+                    <div class="card h-100 border-0 bg-light shadow-sm">
                         <div class="card-body">
                             <h3>Send Us a Message</h3>
                             <div class="ms-3">
@@ -450,13 +474,65 @@
         </div>
     </section>
 
+    <!-- footer section  -->
+    <footer class="mt-3">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-12 col-lg-3 ps-3 text-center text-md-start">
+                    <img src="/images/logo.png" alt="" style="width: 130px; height: 40px;">
+                    <p class="text-white  text-center text-md-start">
+                        <span class="fw-bold">HyPer IT Solutions Company</span> <br>
+                        Providing high quality IT services to boost your business growth.
+                    </p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 text-star ps-5">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Licenses</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Best Website Hostion</a></li>
+                        <li><a href="#">Service Center</a></li>
+                        <li><a href="#">Certification Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 text-start ps-5">
+                    <h6>Topics</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Business & Services</a></li>
+                        <li><a href="#">Home & Family</a></li>
+                        <li><a href="#">Design & Photography</a></li>
+                        <li><a href="#">Software Development</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Web Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 text-start ps-5">
+                    <h6>Earn</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Monetization</a></li>
+                    </ul>
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Report Spam</a></li>
+                        <li><a href="#">Sitemap </a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
-
-
-
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
 
