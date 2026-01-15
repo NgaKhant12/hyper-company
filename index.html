@@ -33,9 +33,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top border-bottom shadow-sm bg-blue-gradient">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top glass-nav">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="" style="width: 120px;"></a>
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-code-branch me-2 text-info"></i>HyPer<span
+                    class="text-info">IT</span></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -43,42 +44,24 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                    <li class="nav-item dropdown me-3 active">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Home</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#skills">Skills</a>
-                            <a class="dropdown-item" href="#">Home 1</a>
-                        </div>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link" href="#services">Services</a>
                     </li>
-                    <li class="nav-item dropdown me-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">FAQ</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">FAQ 1</a>
-                            <a class="dropdown-item" href="#">FAQ 2</a>
-                        </div>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link" href="#about-us">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown me-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Pages</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Page 1</a>
-                            <a class="dropdown-item" href="#">Pages 2</a>
-                        </div>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link" href="#contact-us">Contact Us</a>
                     </li>
                 </ul>
-                <a href="#contact-us" class="btn btn-light">Contact Us <i
-                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#contact-form" class="btn btn-outline-info rounded-5 px-4 py-2">Contact Us <i
+                        class="fa-solid fa-arrow-up-right-from-square ms-2"></i></a>
             </div>
         </div>
     </nav>
@@ -88,14 +71,14 @@
         <div class="container py-5">
             <div class="row g-1 align-items-center">
                 <div class="col-md-6">
-
-                    <p class="text-light d-none d-md-inline bg-primary rounded-5 py-1 px-3 mb-3 ">Our
+                    <span class="badge bg-white text-primary px-3 py-2 rounded-pill mb-3 shadow-sm">
+                        <i class="fa-solid fa-star me-2 text-warning"></i>Our
                         Integrated IT Solutions
                         Company
-                    </p>
+                    </span>
 
                     <div class="text-md-start text-center">
-                        <h1 class="text-white my-3">Grow Your Business With <span class="text-danger">HyPer</span> IT
+                        <h1 class="text-white my-3">Grow Your Business With HyPerIT
                             Solutions Company</h1>
                         <p class="text-white mb-4">
                             Welcom to Our HyPer Community. We provide the best solutions for your business growth. <br>
@@ -104,10 +87,10 @@
                         </p>
                         <div class="icons">
                             <a href="#services" class="btn btn-primary py-2 px-3 mx-1 mx-lg-3 rounded-5">Get Started <i
-                                    class="fa-solid fa-arrow-up-right-from-square text-light"></i></a>
+                                    class="fa-solid fa-arrow-up-right-from-square text-light ms-2"></i></a>
 
-                            <a href="#" class="btn btn-light py-2 px-3 rounded-5">Discover More...<i
-                                    class="fa-solid fa-arrow-up-right-from-square text-primary"></i></a>
+                            <a href="#" class="btn btn-light py-2 px-3 rounded-5">Discover More<i
+                                    class="fa-solid fa-arrow-up-right-from-square text-primary ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -130,107 +113,68 @@
             </div>
 
             <div class="row g-4">
-                <!-- Web Design -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <div class="service-icon mx-auto mb-3">
-                            <i class="fa-solid fa-palette"></i>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon-box bg-blue-light mb-4">
+                            <i class="fa-solid fa-laptop-code text-primary"></i>
                         </div>
-
-                        <h5>Web Design</h5>
-                        <p>
-                            Creative, User-Friendly Website and Modern Design
-                        </p>
-                        <a href="#" class="btn btn-outline-success mt-2">
-                            Read More......
-                        </a>
+                        <h4>Web Development</h4>
+                        <p class="text-muted">Responsive, fast, and secure websites built with the latest technologies
+                            to represent your brand.</p>
+                        <a href="#" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-
-                <!-- Web Development -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <div class="service-icon mx-auto mb-3">
-                            <i class="fa-solid fa-code"></i>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon-box bg-purple-light mb-4">
+                            <i class="fa-solid fa-paintbrush text-purple"></i>
                         </div>
-
-                        <h5>Web Development</h5>
-                        <p>
-                            Responsive and high-performance websites.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary mt-2">
-                            Read More......
-                        </a>
+                        <h4>UI/UX Design</h4>
+                        <p class="text-muted">Creating intuitive and engaging user interfaces that provide excellent
+                            user experiences.</p>
+                        <a href="#" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- Digital Marketing -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <div class="service-icon mx-auto mb-3">
-                            <i class="fa-solid fa-bullhorn"></i>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon-box bg-green-light mb-4">
+                            <i class="fa-solid fa-chart-line text-success"></i>
                         </div>
-
-                        <h5>Digital Marketing</h5>
-                        <p>
-                            Innovative Strategies to Boost Your Online Presence
-                        </p>
-                        <a href="#" class="btn btn-outline-primary mt-2">
-                            Read More......
-                        </a>
+                        <h4>Digital Marketing</h4>
+                        <p class="text-muted">Boost your online presence with SEO, content marketing, and social media
+                            strategies.</p>
+                        <a href="#" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- SEO -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <div class="service-icon mx-auto mb-3">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon-box bg-orange-light mb-4">
+                            <i class="fa-solid fa-mobile-screen text-warning"></i>
                         </div>
-
-                        <h5>SEO Optimization</h5>
-                        <p>
-                            Improve Your Website Ranking on Search Engines
-                        </p>
-                        <a href="#" class="btn btn-outline-primary mt-2">
-                            Read More......
-                        </a>
+                        <h4>Mobile Apps</h4>
+                        <p class="text-muted">Native and hybrid mobile applications for iOS and Android platforms.</p>
+                        <a href="#" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- Mobile App -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <div class="service-icon mx-auto mb-3">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon-box bg-red-light mb-4">
+                            <i class="fa-solid fa-shield-halved text-danger"></i>
                         </div>
-
-                        <h5>Mobile App</h5>
-                        <p>
-                            Innovative Strategies to Boost Your Online Presence
-                        </p>
-                        <a href="#" class="btn btn-outline-primary mt-2">
-                            Read More......
-                        </a>
+                        <h4>Cyber Security</h4>
+                        <p class="text-muted">Protect your business data with our advanced security solutions and
+                            audits.</p>
+                        <a href="#" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-
-                <!-- Support -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm text-center p-4">
-                        <div class="service-icon mx-auto mb-3">
-                            <i class="fa-solid fa-headset"></i>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon-box bg-info-light mb-4">
+                            <i class="fa-solid fa-headset text-info"></i>
                         </div>
-
-                        <h5>Support</h5>
-                        <p>
-                            24/7 Support for All Your Queries
-                        </p>
-
-                        <a href="#" class="btn btn-outline-primary mt-2">
-                            Read More......
-                        </a>
+                        <h4>IT Support</h4>
+                        <p class="text-muted">24/7 technical support to ensure your business operations never stop.</p>
+                        <a href="#" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -240,43 +184,57 @@
     </section>
 
     <!-- skills section  -->
-    <section id="skills">
+    <section id="skills" class="py-4">
         <div class="container">
             <div class="row g-2">
                 <div class="col-md-6">
                     <div class="p-4">
-                        <p class="h-6 d-inline fw-bold bg-primary text-light p-2 rounded-5 px-3">Our Skills</p>
-                        <p class=" my-4">
-                            We have a team of skilled professionals who are experts in their respective fields. Our team
-                            is
-                            dedicated to providing high-quality services to our clients.
+                        <h6 class="text-info fw-bold text-uppercase">Our Expertise</h6>
+                        <h2 class="fw-bold text-white mb-4">We are experts in <br> <span class="text-custom-blue">IT
+                                Solutions</span></h2>
+                        <p class="text-white-50 mb-5">
+                            Our team comprises senior developers and designers with over 10 years of experience in the
+                            industry.
                         </p>
-                        <div class="mb-4">
-                            <label for="" class="form-label">Web Design</label>
-                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100" style="height: 12px">
-                                <div class="progress-bar bg-dark" style="width: 90%"> 90%</div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between text-white mb-2">
+                                <span>Web Development</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-gradient-primary" role="progressbar" style="width: 95%">
+                                </div>
                             </div>
                         </div>
-                        <div class="mb-4">
-                            <label for="" class="form-label">Web Development</label>
-                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100" style="height: 12px">
-                                <div class="progress-bar bg-primary" style="width: 95%">95%</div>
+
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between text-white mb-2">
+                                <span>UI/UX Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 85%"></div>
                             </div>
                         </div>
-                        <div class="mb-4">
-                            <label for="" class="form-label">Software Development</label>
-                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100" style="height: 12px">
-                                <div class="progress-bar bg-info" style="width: 85%">85%</div>
+
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between text-white mb-2">
+                                <span>Digital Marketing</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 90%">
+                                </div>
                             </div>
                         </div>
-                        <div class="mb-4">
-                            <label for="" class="form-label">Digital Marketing</label>
-                            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100" style="height: 12px">
-                                <div class="progress-bar bg-warning" style="width: 90%">90%</div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between text-white mb-2">
+                                <span>Mobile Apps</span>
+                                <span>93%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-gradient-prmiary" role="progressbar" style="width: 93%">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -293,12 +251,12 @@
 
     <!-- about section -->
     <section id="about-us">
-        <div class="container p-4">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <p class="h-6 d-inline fw-bold bg-primary text-light p-2 rounded-5 px-3">About Us</p>
                 <p class="text-muted my-3"> About of HyPer IT Solutions Company </p>
             </div>
-            <div class="row g-4 align-items-center mb-5">
+            <div class="row g-4">
                 <div class="col-md-6">
                     <div class="img-fluid text-center position-relative overflow-hidden rounded-3">
                         <p class="position-absolute top-0 end-0 bg-primary text-white rounded-1 p-2 m-1">
@@ -329,21 +287,21 @@
                             <span class="text-muted">24/7 support</span>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary py-2 px-4 rounded-5">Learn More...<i
-                            class="fa-solid fa-arrow-up-right-from-square text-light"></i></a>
+                    <a href="#" class="btn btn-primary py-2 px-4 rounded-5">Learn More <i
+                            class="fa-solid fa-arrow-up-right-from-square text-light ms-2"></i></a>
                 </div>
             </div>
 
-            <div class="row g-1 justify-content-center">
+            <div class="row g-1 justify-content-center mt-3">
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="about-numbers text-center m-1 rounded-3 p-3 ">
-                        <h2 class="fw-bold">1,000+</h2>
+                        <h2 class="fw-bold">1K+</h2>
                         <p>Satisfied Clients</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="about-numbers text-center m-1 rounded-3 p-3">
-                        <h2 class="fw-bold">1,500+</h2>
+                        <h2 class="fw-bold">1.5K+</h2>
                         <p>IT Projects</p>
                     </div>
                 </div>
@@ -365,7 +323,7 @@
 
     <!-- Contact Section -->
     <section id="contact-us">
-        <div class="container p-3">
+        <div class="container">
             <div class="text-center">
                 <p class="h-6 d-inline fw-bold bg-primary text-light py-2 rounded-5 px-4">Contact Us</p>
                 <p class="h-5 my-3">We are here to help you</p>
@@ -379,36 +337,33 @@
                     </iframe>
                 </div>
             </div>
-            <div class="row g-1">
+            <div class="row g-1" id="contact-form">
                 <div class="col-lg-5 px-4">
                     <div class="card p-3 h-100 border-0">
                         <div class="card-body ">
-                            <h3>Get in Touch</h3>
+                            <h3 class="text-primary">Get in Touch</h3>
                             <div class=" ms-3">
                                 <p>
-                                    <i class="fa-solid fa-location me-3 text-danger"></i> 12x3 Mingalar Street, Yesagyo,
+                                    <i class="fa-solid fa-location me-3 "></i> 12x3 Mingalar Street, Yesagyo,
                                     Myanmar
                                 </p>
                                 <p>
-                                    <i class="fa-solid fa-phone me-3 text-danger"></i> <a href="tel:09772284019"
-                                        target="_blank">+95
+                                    <i class="fa-solid fa-phone me-3"></i> <a href="tel:09772284019" target="_blank">+95
                                         9 123
                                         456 789</a>
                                 </p>
                                 <p>
-                                    <i class="fa-solid fa-envelope me-3 text-danger"></i> <a
-                                        href="mailto:ngakhant464f@gmail.com" target="_blank">hypermyanmar@gmail.com</a>
+                                    <i class="fa-solid fa-envelope me-3"></i> <a href="mailto:ngakhant464f@gmail.com"
+                                        target="_blank">hypermyanmar@gmail.com</a>
                                 </p>
                                 <p>
-                                    <i class="fa-solid fa-earth me-3 text-danger"></i>
+                                    <i class="fa-solid fa-earth me-3"></i>
                                     <a href="#">www.hypermyanmar.com</a>
                                 </p>
                             </div>
                             <hr>
                             <h4>Office Hours</h4>
                             <div class="ms-3">
-
-
                                 <p><i class="fa-solid fa-clock me-3 text-primary"></i><strong>Mon - Fri :
                                     </strong>
                                     9:00 AM -
@@ -421,13 +376,11 @@
                                 </p>
 
                                 <div class="mt-5">
-                                    <a href="#" class="me-3 text-dark"><i class="fab fa-facebook fa-lg"></i></a>
-                                    <a href="#" class="me-3 text-dark"><i class="fab fa-instagram fa-lg"></i></a>
-                                    <a href="#" class="me-3 text-dark"><i class="fab fa-linkedin fa-lg"></i></a>
-                                    <a href="#" class="me-3 text-dark"><i class="fab fa-twitter fa-lg"></i></a>
-
+                                    <a href="#" class="me-3 text-primary"><i class="fab fa-facebook fa-lg"></i></a>
+                                    <a href="#" class="me-3 text-primary"><i class="fab fa-instagram fa-lg"></i></a>
+                                    <a href="#" class="me-3 text-primary"><i class="fab fa-linkedin fa-lg"></i></a>
+                                    <a href="#" class="me-3 text-primary"><i class="fab fa-twitter fa-lg"></i></a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -435,7 +388,7 @@
                 <div class="col-lg-7 px-4">
                     <div class="card h-100 border-0 bg-light shadow-sm">
                         <div class="card-body">
-                            <h3>Send Us a Message</h3>
+                            <h3 class="text-primary">Send Us a Message</h3>
                             <div class="ms-3">
                                 <form action="">
                                     <div class="row g-2 mb-2">
@@ -460,7 +413,7 @@
                                             required></textarea>
                                     </div>
                                     <div class=" text-end">
-                                        <button type="submit" class="btn btn-danger">
+                                        <button type="submit" class="btn btn-info">
                                             <i class="fas fa-paper-plane me-2"></i>Send Message
                                         </button>
                                     </div>
@@ -474,54 +427,58 @@
     </section>
 
     <!-- footer section  -->
-    <footer class="mt-3">
-        <div class="container py-5">
-            <div class="row g-4">
-                <div class="col-12 col-lg-3 ps-3 text-center text-md-start">
-                    <img src="/images/logo.png" alt="" style="width: 130px; height: 40px;">
-                    <p class="text-white  text-center text-md-start">
-                        <span class="fw-bold">HyPer IT Solutions Company</span> <br>
-                        Providing high quality IT services to boost your business growth.
-                    </p>
+    <footer class="footer-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-info">HyPer IT Solutions</h5>
+                    <p>Providing high quality IT services to boost your business growth. We are committed to excellence
+                        and innovation.</p>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 text-star ps-5">
-                    <h6>Company</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Licenses</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Best Website Hostion</a></li>
-                        <li><a href="#">Service Center</a></li>
-                        <li><a href="#">Certification Center</a></li>
-                    </ul>
+
+                <div class="col-md-2 col-lg-2 mt-3">
+                    <h6 class="text-uppercase mb-4 fw-bold">Services</h6>
+                    <p><a href="#" class="text-white text-decoration-none footer-link">Web Design</a></p>
+                    <p><a href="#" class="text-white text-decoration-none footer-link">Development</a></p>
+                    <p><a href="#" class="text-white text-decoration-none footer-link">SEO</a></p>
+                    <p><a href="#" class="text-white text-decoration-none footer-link">Digital Marketing</a></p>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 text-start ps-5">
-                    <h6>Topics</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Business & Services</a></li>
-                        <li><a href="#">Home & Family</a></li>
-                        <li><a href="#">Design & Photography</a></li>
-                        <li><a href="#">Software Development</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">SEO</a></li>
-                        <li><a href="#">Web Development</a></li>
-                    </ul>
+
+                <div class="col-md-3 col-lg-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 fw-bold">Useful links</h6>
+                    <p><a href="#" class="text-white text-decoration-none footer-link">Your Account</a></p>
+                    <p><a href="#" class="text-white text-decoration-none footer-link">Become an Affiliate</a></p>
+                    <p><a href="#" class="text-white text-decoration-none footer-link">Shipping Rates</a></p>
+                    <p><a href="#" class="text-white text-decoration-none footer-link">Help</a></p>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 text-start ps-5">
-                    <h6>Earn</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Affiliate Program</a></li>
-                        <li><a href="#">Monetization</a></li>
-                    </ul>
-                    <h6>Support</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Report Spam</a></li>
-                        <li><a href="#">Sitemap </a></li>
-                        <li><a href="#">Refund Policy</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
+
+                <div class="col-md-4 col-lg-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 fw-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3 me-2"></i> Yesagyo, Myanmar</p>
+                    <p><i class="fas fa-envelope mr-3 me-2"></i> info@hyper.com</p>
+                    <p><i class="fas fa-phone mr-3 me-2"></i> + 95 234 567 88</p>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>© 2026 Copyright: <a href="#" class="text-info text-decoration-none"><strong>HyPer IT
+                                Solutions</strong></a></p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font-size: 23px;"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font-size: 23px;"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font-size: 23px;"><i class="fab fa-google-plus"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
