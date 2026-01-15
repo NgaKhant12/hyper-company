@@ -1,25 +1,12 @@
 :root {
   --primary-bg: #eef2f9;
   --sidebar-width: 35vh;
-  --text-color: #333;
-  --text-muted: #8898aa;
-  --green-accent: #4318ff;
   --blue-accent: #5e72e4;
-  --purple-accent: #8965e0;
-  --cyan-accent: #11cdef;
-  --red-logo: #4318ff;
-  --primary-bg: #f4f7fe;
-  --sidebar-width: 260px;
-  --accent-blue: #4318ff;
-  --accent-green: #05cd99;
-  --accent-orange: #ffb547;
-  --accent-red: #ee5d50;
-  --dark-text: #1b2559;
-  --light-text: #a3aed0;
+  --blue-logo: #4318ff;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--primary-bg);
   overflow-x: hidden;
 }
@@ -47,7 +34,7 @@ body {
 
 .logo-icon {
   font-size: 32px;
-  color: var(--red-logo);
+  color: var(--blue-logo);
 }
 
 .logo-text h4 {
@@ -57,7 +44,7 @@ body {
 }
 
 .logo-text span {
-  color: var(--red-logo);
+  color: var(--blue-logo);
   font-weight: 500;
 }
 
@@ -86,13 +73,13 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--green-accent);
+  color: var(--blue-accent);
   background-color: #f8f9fa;
 }
 
 .nav-link.active {
-  color: var(--green-accent);
-  border-left-color: var(--green-accent);
+  color: var(--blue-accent);
+  border-left-color: var(--blue-accent);
   background-color: transparent;
 }
 
@@ -123,7 +110,7 @@ body {
 }
 
 .breadcrumb-active {
-  color: var(--green-accent);
+  color: var(--blue-accent);
 }
 
 .user-profile {
@@ -142,7 +129,7 @@ body {
   position: absolute;
   top: -5px;
   right: -5px;
-  background: var(--red-logo);
+  background: var(--blue-logo);
   color: white;
   font-size: 9px;
   padding: 2px 5px;
