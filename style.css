@@ -64,7 +64,9 @@ nav-link {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.02);
 }
 
@@ -152,16 +154,33 @@ nav-link {
   background: linear-gradient(90deg, #ffc107, #ffdb72);
 }
 
+.skill-img {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 /* contact-us  */
 iframe {
-  width: 80%;
+  width: 90%;
   height: 400px;
   border-radius: 15px;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 #contact-us input::placeholder,
-#contact-us texta::placeholder {
+#contact-us textarea::placeholder {
   font-size: 0.9rem;
 }
 
@@ -178,8 +197,13 @@ iframe {
   background-color: #05162b;
 }
 
-.footer-link:hover {
+.footer-link {
+  color: white !important;
+  font-size: 13px;
   transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
   color: #0dcaf0 !important;
   padding-left: 5px;
 }

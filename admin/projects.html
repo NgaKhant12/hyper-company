@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyPer IT - Project Management</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-2 sidebar">
+                <div class="logo-section">
+                    <i class="fas fa-code-branch logo-icon"></i>
+                    <div class="logo-text">
+                        <h4 class="mb-0 fw-bold">HyPer <span class="text-primary">IT</span></h4>
+                    </div>
+                </div>
+                <div class="nav-menu">
+                    <p class="nav-category">Main Menu</p>
+                    <a href="dashboard.html" class="nav-link"><i class="fas fa-home"></i> <span>Dashboard</span></a>
+                    <a href="projects.html" class="nav-link active"><i class="fas fa-project-diagram"></i>
+                        <span>Projects</span></a>
+                    <a href="clients.html" class="nav-link"><i class="fas fa-users"></i> <span>Clients</span></a>
+                    <a href="#" class="nav-link"><i class="fas fa-server"></i> <span>Server Health</span></a>
+                    <p class="nav-category">Internal</p>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-ticket-alt"></i> <span>Support Tickets</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog"></i> <span>Settings</span>
+                    </a>
+                </div>
+                <a href="#" class="nav-link mt-auto text-danger"><i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span></a>
+            </div>
+
+            <div class="col-10 main-content">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h6 class="text-muted mb-0">Pages / Projects</h6>
+                        <h4 class="fw-bold mb-0">Project Management</h4>
+                    </div>
+                    <button class="btn btn-primary rounded-pill px-4 py-2 shadow" data-bs-toggle="modal"
+                        data-bs-target="#addProjectModal">
+                        <i class="fas fa-plus me-1"></i> Add <span class="d-none d-md-inline">New Project</span>
+                    </button>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge bg-light-success rounded-pill px-3 py-2">Active</span>
+                                <div class="dropdown">
+                                    <button class="btn" data-bs-toggle="dropdown"><i
+                                            class="fas fa-ellipsis-h text-muted cursor-pointer"></i></button>
+                                    <ul class="dropdown-menu border-0 shadow">
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-edit me-2"></i> Edit</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-danger" href="#"><i
+                                                    class="fas fa-trash me-2"></i> Delete</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h5 class="fw-bold mb-2">E-Commerce Web</h5>
+                            <p class="text-muted small mb-4">Redesigning the online shopping platform with modern UI/UX
+                                and payment gateway.</p>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="text-muted">Progress</span>
+                                    <span class="fw-bold text-primary">85%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-primary" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="team-avatars">
+                                    <img src="https://i.pravatar.cc/150?u=1" alt="team">
+                                    <img src="https://i.pravatar.cc/150?u=2" alt="team">
+                                    <img src="https://i.pravatar.cc/150?u=3" alt="team">
+                                </div>
+                                <div class="text-end">
+                                    <p class="text-muted small mb-0">Budget</p>
+                                    <h6 class="fw-bold mb-0">$12,500</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge bg-light-warning rounded-pill px-3 py-2">In Progress</span>
+                                <div class="dropdown">
+                                    <button class="btn" data-bs-toggle="dropdown"><i
+                                            class="fas fa-ellipsis-h text-muted cursor-pointer"></i></button>
+                                    <ul class="dropdown-menu border-0 shadow">
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-edit me-2"></i> Edit</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-danger" href="#"><i
+                                                    class="fas fa-trash me-2"></i> Delete</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h5 class="fw-bold mb-2">Mobile Banking UI</h5>
+                            <p class="text-muted small mb-4">Developing intuitive mobile interface for digital banking
+                                transactions.</p>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="text-muted">Progress</span>
+                                    <span class="fw-bold text-warning">40%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-warning" style="width: 40%"></div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="team-avatars">
+                                    <img src="https://i.pravatar.cc/150?u=4" alt="team">
+                                    <img src="https://i.pravatar.cc/150?u=5" alt="team">
+                                </div>
+                                <div class="text-end">
+                                    <p class="text-muted small mb-0">Budget</p>
+                                    <h6 class="fw-bold mb-0">$8,200</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge bg-light-blue rounded-pill px-3 py-2">Pending</span>
+                                <div class="dropdown">
+                                    <button class="btn" data-bs-toggle="dropdown"><i
+                                            class="fas fa-ellipsis-h text-muted cursor-pointer"></i></button>
+                                    <ul class="dropdown-menu border-0 shadow">
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-edit me-2"></i> Edit</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-danger" href="#"><i
+                                                    class="fas fa-trash me-2"></i> Delete</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h5 class="fw-bold mb-2">AI Chatbot Integration</h5>
+                            <p class="text-muted small mb-4">Implementing automated customer support using GPT-4 API.
+                            </p>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="text-muted">Progress</span>
+                                    <span class="fw-bold text-info">10%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-info" style="width: 10%"></div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="team-avatars">
+                                    <img src="https://i.pravatar.cc/150?u=9" alt="team">
+                                </div>
+                                <div class="text-end">
+                                    <p class="text-muted small mb-0">Budget</p>
+                                    <h6 class="fw-bold mb-0">$5,000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addProjectModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow">
+                <div class="modal-header border-0 p-4 pb-0">
+                    <h5 class="modal-title fw-bold">New Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small fw-bold">PROJECT NAME</label>
+                            <input type="text" class="form-control rounded-3 border-light bg-light py-2"
+                                placeholder="Enter project name">
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col-6">
+                                <label class="form-label text-muted small fw-bold">BUDGET ($)</label>
+                                <input type="number" class="form-control rounded-3 border-light bg-light py-2"
+                                    placeholder="5000">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label text-muted small fw-bold">STATUS</label>
+                                <select class="form-select rounded-3 border-light bg-light py-2">
+                                    <option>Active</option>
+                                    <option>In Progress</option>
+                                    <option>Pending</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-muted small fw-bold">DESCRIPTION</label>
+                            <textarea class="form-control rounded-3 border-light bg-light" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 fw-bold">Create
+                            Project</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
